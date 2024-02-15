@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>1990s Music History</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80s Retro Groove</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
             background-image: url(80s.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            margin: auto;
-        }
-        h1,h3,h4 {
+            padding: 20px;
             text-align: center;
-            font-family: Impact, sans-serif;
-            padding: 50px;
-            color: rgb(196, 100, 21);
         }
-        .album-container {
+        h1 {
+            margin: 0;
+            font-size: 60px;
+            color: #eae3e3;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 3px 3px 6px #333;
+        }
+        nav {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ff0cba;
+            padding: 10px;
         }
-        .album {
-            text-align: center;
-            margin: 20px;
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
         }
-        p {
-            color:aliceblue
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 40px;
+        }
+        h2 {
+            color: #891a87;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            font-size: 20px;
         }
     </style>
 </head>
+
 <body>
-    <h1>Popular Music From the 90s</h1>
-    <h3>The 90s came with smashing success from Rock, Metal, Rap, and the explosion of latin music in the popular cultural zeitgeist. </h3>
-    <h4>Metal&LatinPop</h4>
-    <div class="album-container">
-        <div class="album">
-            <img src="" alt="">
-            <p>"Vulgar Display of Power" by Pantera (1992):</p>
-            <p>Noteable Tracks:Walk,Mouth of War,Walk,This Love</p>
-        </div>
-        <div class="album">
-            <img src="Iglesisas.jpg" alt="Iglesisas cover">
-            <p>"Vivir" by Enrique Iglesias (1997)</p>
-            <p>Noteable Tracks:Al Despertar,Miente </p>
-        </div>
-    </div>
-    <h4>HipHop&Rock</h4>
-    <div class="album-container">
-        <div class="album">
-            <img src="2pac.jpg" alt="2pac cover">
-            <p>"All Eyez on Me" by Tupac (1996)</p>
-            <p>Noteable Tracks: California Love</p>
-        </div>
-        <div class="album">
-            <img src="The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" alt="Smashing Pumpkins cover">
-            <p>"Mellon Collie And The infinite Sadness" by The Smashing Pumpkins (1995) </p>
-            <p>Noteable Tracks:Zero,Bullet with Butterfly Wings </p>
-        </div>
+    <header>
+        <h1>80s Retro Groove</h1>
+    </header>
+
+    <nav>
+        <a href="https://gabs62.github.io/artproject">Home</a>
+        <a href="#artists">Artists</a>
+        <a href="#songs">Songs</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to the Ultimate 80s Music Experience!</h2>
+        <p>context</p>
+    </section>
+
+    <section id="artists">
+        <h2>Featured Artists</h2>
+        <ul>
+            <li>Michael Jackson</li>
+            <li>Madonna</li>
+            <li>Prince</li>
+        </ul>
+    </section>
+
+    <section id="songs">
+        <h2>Top Songs</h2>
+        <ol>
+            <li>"Billie Jean" - Michael Jackson</li>
+            <li>"Like a Virgin" - Madonna</li>
+            <li>"Purple Rain" - Prince</li>
+        </ol>
+    </section>
+
+    <section id="about">
+        <h2>About 80s Retro Groove</h2>
+        <p>MTV became a cultural phenomenon, influencing how music was produced, consumed, and promoted.
+            The shift from analog to digital recording technologies revolutionized the music-making process</p>
+    </section>
 </body>
 
 </html>

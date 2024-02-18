@@ -5,10 +5,12 @@
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <title>1970s Music History</title>
     <style>
-         body {
-            background-image: url(Img/groovy-psychedelic.jpg);
-            margin: 0px;
-            padding: 0px;
+          body {
+            background-image: url(img/70sbackground.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: auto;
         }
         h1{
             margin: 50px;
@@ -30,14 +32,18 @@
             padding: 20px;
             
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffaa0c;
+            padding: 10px;
+        }
         nav a {
             color: #ffffff;
             text-decoration: none;
-            justify-content: center;
             margin: 0 20px;
             font-size: 18px;
             font-weight: bold;
-            text-align: center;
             letter-spacing: 1px;
             transition: color 0.3s ease;
         }

@@ -12,7 +12,10 @@
             margin: 0;
             font-family:Arial, sans-serif;
             color: #eae3e3;
-            
+        }
+        audio {
+            display: block;
+            margin: auto;
         }
         h1 {
             margin: 20px;
@@ -26,7 +29,7 @@
             text-align: center;
             font-family: Impact, sans-serif;
             padding: 20px;
-            color: rgb(156, 73, 5); font-size: 40px;
+            color: rgb(250, 117, 8); font-size: 40px;
             letter-spacing: 1px;
         }
         .album-container {
@@ -39,7 +42,7 @@
             margin: 20px;
         }
         p {
-            color:#eaeaea; padding: 20px; font-size: 18px;
+            color:#eaeaea; padding: 20px; font-size: 20px;
         }
         nav {
             display: flex;
@@ -57,7 +60,7 @@
             transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #ffcc00;
+            color: #00ff62;
         }
     </style>
 </head>
@@ -76,12 +79,18 @@
         <div class="album">
             <img src="img/pantera.jpg" alt="Pantera cover">
             <p>"Vulgar Display of Power" by Pantera (1992):</p>
-            <p>Noteable Tracks:Walk,Mouth of War,Walk,This Love</p>
+            <p>Noteable Tracks:Walk,Mouth of War,This Love</p>
+            <audio controls>
+                <source src="audio\90\Pantera  Walk.mp3" type="audio/mp3">
+            </audio>
         </div>
         <div class="album">
             <img src="img/Iglesisas.jpg" alt="Iglesisas cover">
             <p>"Vivir" by Enrique Iglesias (1997)</p>
             <p>Noteable Tracks:Al Despertar,Miente </p>
+            <audio controls>
+                <source src="audio\90\Enrique Iglesias  Miente.mp3" type="audio/mp3">
+            </audio>     
         </div>
     </div>
     <h4>HipHop&Rock</h4>
@@ -90,11 +99,17 @@
             <img src="img/2pac.jpg" alt="2pac cover">
             <p>"All Eyez on Me" by Tupac (1996)</p>
             <p>Noteable Tracks: California Love</p>
+            <audio controls>
+                <source src="audio\90\California Love Original Version.mp3" type="audio/mp3">
+            </audio>        
         </div>
         <div class="album">
-            <img src="img/The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" alt="Smashing Pumpkins cover">
+            <img src="img/The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" alt="Smashing Pumpkins cover"> 
             <p>"Mellon Collie And The infinite Sadness" by The Smashing Pumpkins (1995) </p>
             <p>Noteable Tracks:Zero,Bullet with Butterfly Wings </p>
+            <audio controls>
+                <source src="audio\90\Bullet With Butterfly Wings Remastered 2012.mp3" type="audio/mp3">
+            </audio>        
         </div>
 </body>
 

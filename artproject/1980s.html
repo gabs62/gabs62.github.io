@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>80s Retro Groove</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: rgb(41, 79, 94);
-        
-            color: #333;
+            background-image: url("img/90s.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #eae3e3;
         }
 
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+            font-family: Impact, sans-serif;
+            padding: 20px;
+            color: rgb(156, 73, 5);
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+
+        .album-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .album {
+            text-align: center;
+            margin: 20px;
+        }
+
+        p {
+            color: #eaeaea;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+
         header {
-            background-image: url(80s.jpg);
+            background-image: url("img/80s.jpg");
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             margin: 0;
             font-size: 60px;
-            color: #eae3e3;
+            color: #adcda9;
             font-family: 'Pacifico', cursive;
-            text-shadow: 3px 3px 6px #333;
+            text-shadow: 3px 3px 6px #0c852a;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #be2525;
+            background-color: black;
             padding: 10px;
         }
+
         nav a {
             color: #ffffff;
             text-decoration: none;
@@ -42,22 +76,28 @@
             letter-spacing: 1px;
             transition: color 0.3s ease;
         }
+
         nav a:hover {
             color: #ffcc00;
         }
+
         section {
             padding: 40px;
         }
+
         h2 {
             color: #891a87;
             font-size: 36px;
             margin-bottom: 20px;
+            text-shadow: 3px 3px 6px white;
         }
+
         ul,
         ol {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin-bottom: 15px;
             font-size: 20px;
@@ -65,19 +105,71 @@
     </style>
 </head>
 
+
 <body>
     <header>
         <h1>80s Retro Groove</h1>
     </header>
+
 
     <nav>
         <a href="https://gabs62.github.io/artproject">Home</a>
         <a href="1970s.html">1970s</a>
         <a href="1990s.html">1990s</a>
         <a href="2000s.html">2000s</a>
-    
+    </nav>
+    <h2>Popular Music From the 80s</h2>
+    <h3>The 80s came with smashing success from Rock, Metal, Rap, and the explosion of latin music in the popular
+        cultural zeitgeist. </h3>
+    <h4>Metal&Pop</h4>
+    <div class="album-container">
+        <div class="album">
+            <iframe src="https://www.youtube-nocookie.com/embed/Zav42AdFAEs?start=30&vq=hd1080&autoplay=1&fs=0"
+                width="560" height="315" title="A YouTube video" frameborder="0"></iframe>
+            <p>"What's Love Got To Do With It" by Tina Turner (1984):</p>
+            <p>This song ended up becoming Tina Turner's most successful song ever, and was taken from her 1984 album
+                Private Dancer.</p>
+        </div>
+        <div class="album">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/w_WB21zEp14?vq=hd1080&autoplay=1&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&disablekb=1"
+                width="560" height="315" title="Michael Jackson - Billie Jean | No copyright music (Remix)"
+                frameborder="0"></iframe>
+            <p>"Billie Jean" by Michael Jackson (1983)</p>
+            <p>The song was promoted with a short film that broke down MTV’s racial barrier, and his performance on
+                Motown 25, in which he premiered his ‘moonwalk’.
+                It remains perhaps the greatest pop song of all time, and has that timeless quality that will never
+                disappoint. </p>
+        </div>
+    </div>
+    <h4>HipHop&Rock</h4>
+    <div class="album-container">
+        <div class="album">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JqIHlDVqUTw?si=Hp52Ed6mYj-DrHbT"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>"Careless Whisper" by George Michael. (1984)</p>
+            <p>Noteable Tracks: California Love</p>
+        </div>
+        <div class="album">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/XCA5I8WgWEo?si=Wo_wTsm1uVjA2VpS&amp;start=10"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>"Don't Stop Believin" by Journey (1981) </p>
+            <p>"Don't Stop Believin'" is a rock song by American band Journey. It was released in October 1981 as the
+                second single from the group's seventh studio album, Escape (1981), released through Columbia Records.
+                "Don't Stop Believin'" shares writing credits between the band's vocalist Steve Perry, guitarist Neal
+                Schon, and keyboardist Jonathan Cain. A mid-tempo rock anthem and power ballad,[2] "Don't Stop
+                Believin'" is memorable for its distinctive opening piano riff. </p>
+        </div>
 
-    
+
+
+
 </body>
+
 
 </html>

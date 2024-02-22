@@ -1,8 +1,81 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: rgb(162, 221, 245);
 
-    color: #faf5f5;
+body {
+    background-image: url(img/70s-retro-lines.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+    /* Navigation styles */
+nav {
+    background-color: #8B0000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main content styles */
+
+h1 {
+    margin: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    color: #d5ceb1;
+    font-family: 'Impact', sans-serif;
+    text-shadow: 3px 3px 6px #333;
+    text-decoration-style: dashed;
+    text-align: center;
+}
+
+h3,h4 {
+    text-align: center;
+    font-family: Impact, sans-serif;
+    padding: 30px;
+    color: #500707;
+}
+/* Album container styles */
+audio {
+    display: block;
+    margin: auto;
+}
+/* Album container styles */
+.album-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* ALbum styles */
+.album {
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(89, 48, 48, 0.8);
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.album img {
+    border-radius: 8px;
+}
+
+.album p {
+    color: #ffdb58;
 }

@@ -3,6 +3,7 @@ My first project
 
 https://gabs62.github.io
 
-https://gabs62.github.io/artproject
-Resources: HTML Validator
-https://online.html-validate.org/
+<br> https://gabs62.github.io/artproject <br>
+<br> https://gabs62.github.io/Final <br>
+<br>Resources: HTML Validator
+https://online.html-validate.org/<br>

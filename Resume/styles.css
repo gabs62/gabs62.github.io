@@ -9,7 +9,20 @@ body {
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
 }
+.overview {
+    margin-bottom: 20px;
+}
 
+.overview h2 {
+    color: #007bff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.overview p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
 .full {
     width: 85%;
     max-width: 901px;

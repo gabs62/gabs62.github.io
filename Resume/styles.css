@@ -55,9 +55,9 @@ body {
 }
 
 .Contact,
-.Skills,
 .Language,
 .Software,
+.Skills,
 .title,
 .Experience,
 .Education,
@@ -85,7 +85,7 @@ p {
 
 p1 {
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 ul {

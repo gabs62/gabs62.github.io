@@ -1,5 +1,5 @@
 <br>Final project Team<br>
-<br>Nat page 2<br>
-<br>Geniale page 3<br>
-<br>Gaby page 4<br>
-<br>Aldair page 5 <br>
+<br>Nat page 2 https://gabs62.github.io/Final/page2.html<br>
+<br>Geniale page 3 https://gabs62.github.io/Final/page3.html<br>
+<br>Gaby page 4 https://gabs62.github.io/Final/page4.html<br>
+<br>Aldair page 5https://gabs62.github.io/Final/page5.html <br>

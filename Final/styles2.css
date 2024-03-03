@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    }
+    
+    .column1{
+    height: 500px;
+    width: 40%;
+    background-color:whitesmoke;
+    }
+    
+    .column2{
+    width: 60%;
+    background-color:white;
+    }
+    
+    .footer {
+    text-align: center;
+    background-color: #0032a1;
+    padding: 120px;
+    }

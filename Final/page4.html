@@ -21,6 +21,7 @@
     display: flex;
     align-items: first baseline; 
     }
+
     .column2 {
     flex: 2;
     padding: 20px;
@@ -30,10 +31,21 @@
     }
     .footer {
     padding: 20px;
-    background-color:#7b868c ;
     color: #fff;
-    text-align: center;   
+    text-align: center;  
+    position: relative; 
     }
+   .footer::before {
+    content: "";
+    background: url(img/circuit-board2.jpg) center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+   }
     .row {
     margin-bottom: 20px;
     }
@@ -63,7 +75,7 @@
         <h2>Insert Image</h2>
     </div>
 </div>
-    <div class="footer">    
+    <div class="footer"> 
         <footer>
             <div class="row">
                 <h2>Cyber Lab Events</h2>

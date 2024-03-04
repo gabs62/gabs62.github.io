@@ -16,18 +16,40 @@
     flex: 0.5;
     padding: 20px;
     background-color:#050505 ;
-    color: #000;
-    height: 600px;
+    height: 700px;
     display: flex;
+    flex-direction: column;
     align-items: first baseline; 
     }
-
     .column2 {
     flex: 2;
     padding: 20px;
     background-color: #f89800;
-    color: #fff;
-    height: 600px;
+    color: #0f0f0f;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    .image-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    }
+    .image-row img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+    .info-section {
+    margin-top: 20px;
+    text-align: left;
     }
     .footer {
     padding: 20px;
@@ -69,24 +91,35 @@
 <div class="container">
     <div class="column1">
         <h2><img src="img/ACSL_Logos-Orange.png" alt="Cyber Systems Lab Logo"></h2>
-        <p>might remove</p>
     </div>
     <div class="column2">
-        <h2>Advanced Cyber Systems Lab</h2>
-        <p>Welcome to the Advanced Cyber  Systems Lab at Gateway Community College</p>
-    </div>
+        <h2>Welcome to the Advanced Cyber  Systems Lab at Gateway Community College</h2>
+        <div class="image-row">
+        <img src="img/LogoWallSM.jpg" alt="Cyber Lab Logo Wall">
+        <img src="img/ACSLPCsView.jpg" alt="Cyber Lab PC's">
+        <img src="img/NetworkingMiniRack.jpg" alt="Cyber Lab networking rack">
+</div>
+<div class="info-section">
+    <h2>Cyber Lab Information</h2>
+    <p><strong>Hands-On IT Exploration:</strong></p>
+    <p><strong>Collaborative Project Opportunities:</strong></p>
+    <p>Contribute to meaningful cybersecurity training and practice</p>
+</div>
+<p>We look forward to seeing you there!</p>
+<p>Located in Room MA 2108</p>
+<p>GateWay Community College-Washington Campus</p>
+<p>108 N 40th St, Phoenix, AZ 85034</p>
+</div>
 </div>
     <div class="footer"> 
         <footer>
             <div class="row">
                 <h2>Cyber Lab Events</h2>
                 <p>add context</p>
-                <p>add context</p>
             </div>
             <div class="row">
-                <h2>CYberlab calendar</h2>
+                <h2>Advanced Cyber Systems Lab</h2>
                 <p><iframe src="https://calendar.google.com/calendar/embed?src=c_b5998aa94873a11bd01983dda295b4b7d092a225d387a1b5eb3f9dbe48f93b05%40group.calendar.google.com&ctz=America%2FPhoenixLinks to an external site." style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> </p>
-                <p>add context</p>
                 </div>
         </footer>
     </div>

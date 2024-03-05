@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <style>
+        body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        }
+        p {
+    margin-bottom: 10px;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .column1 {
+    flex: 0.5;
+    padding: 20px;
+    background-color:#050505 ;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline; 
+    }
+    .column2 {
+    flex: 2;
+    padding: 20px;
+    background-color: #fa7c06;
+    color: #0f0f0f;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    .image-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    }
+    .image-row img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fa7c06;
+    border-radius: 10px;
+    }
+    .info-section {
+    margin-top: 10px;
+    text-align: justify;
+    }
+    .info-section h2{
+        margin-bottom: 10px;
+    }
+
+    .bullet-points li {
+    margin-bottom: 8px;
+    }
+    .qr-code {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; 
+    width: 120px;
+    height: 120px;
+    }
+    .footer {
+    padding: 20px;
+    color: #1e1c1c;
+    text-align: center;  
+    position: relative; 
+    }
+   .footer::before {
+    content: "";
+    background: url(img/circuit-board2.jpg) center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+   }
+    .row {
+    margin-bottom: 8px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    </style>
+    </head>
+
+<body>
+    
+<div class="container">
+    <div class="column1">
+        <h2><img src="img/ACSL_Logos-Orange.png" alt="Cyber Systems Lab Logo"></h2>
+    </div>
+    <div class="column2">
+        <h2>Welcome to the Advanced Cyber  Systems Lab at Gateway Community College</h2>
+        <div class="image-row">
+        <img src="img/LogoWallSM.jpg" alt="Cyber Lab Logo Wall">
+        <img src="img/ACSLPCsView.jpg" alt="Cyber Lab PC's">
+        <img src="img/NetworkingMiniRack.jpg" alt="Cyber Lab networking rack">
+</div>
+<div class="info-section">
+    <h2>Our goal is to provide :</h2>
+    <ul class="bullet-points">
+    <li><strong>Hands-On IT Exploration</strong></li>
+    <li><strong>Collaborative Project Opportunities</strong></li>
+    <li><strong>Contribute to meaningful cybersecurity training and practice</strong></li>
+    </ul>
+</div>
+</div>
+</div>
+    <div class="footer"> 
+    <footer>
+    <div class="row">
+    <h2>Advanced Cyber Systems Lab Calendar</h2>
+    <p>Come visit us in Room MA 2108 </p>
+    <p>See the below calendar for more details</p>
+    <img src="img/lab calendar qr-code.png" alt="QR Code" class="qr-code">
+    </div>
+</footer>
+</body>
+</html>

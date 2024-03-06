@@ -28,7 +28,7 @@
     flex: 2;
     padding: 20px;
     background-color: #fa7c06;
-    color: #0f0f0f;
+    color: #333333;
     height: 615px;
     display: flex;
     flex-direction: column;
@@ -64,8 +64,8 @@
     position: absolute;
     bottom: 20px;
     right: 20px; 
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     }
     .footer {
     padding: 20px;
@@ -73,10 +73,18 @@
     text-align: center;  
     position: relative; 
     }
+    .footer-content-box {
+        background-color: #0f0f0f;
+        border-radius: 10px;
+        padding: 15px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
    .footer::before {
     content: "";
     background: url(img/circuit-board2.jpg) center/cover no-repeat;
-    opacity: 0.5;
+    opacity: 2;
     position: absolute;
     top: 0;
     left: 0;
@@ -119,10 +127,8 @@
 </div>
 </div>
     <div class="footer"> 
-    <footer>
-    <div class="row">
-    <h2>Advanced Cyber Systems Lab Calendar</h2>
-    <p><b>Come visit us in Room MA 2108</b></p>
+    <footer class="footer-content-box">
+    <h2>Come visit us in Room MA 2108</h2>
     <p><b>Scan the QR code for calendar details</b></p>
     <img src="img/lab calendar qr-code.png" alt="QR Code" class="qr-code">
     </div>

@@ -3,28 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
 
-<script>
-    function changePage() {
-        const pages = [
-                "https://gabs62.github.io/Final/index.html",
-                "https://gabs62.github.io/Final/page2.html",
-                "https://gabs62.github.io/Final/page3.html",
-                "https://gabs62.github.io/Final/cybersecuritylab.html",
-                "https://gabs62.github.io/Final/page5.html"
-        ];
-
-        let currentPageIndex = 0;
-
-        setInterval(() => {
-            window.location.href = pages[currentPageIndex];
-            currentPageIndex = (currentPageIndex + 1) % pages.length;
-        }, 180000);
-        }
-</script>
 </head>
-
 <body onload="changePage()">
     
     <div class="container">

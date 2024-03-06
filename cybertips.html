@@ -1,66 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Your existing styles here */
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
 
-        /* Additional styles for new elements */
-        #cybersecurityTips {
-            margin-top: 20px;
-        }
-    </style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column1 {
+        flex: 0.5;
+        padding: 20px;
+        background-color: #3498db; /* Blue */
+        height: 615px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #ffffff; /* White */
+        border-radius: 10px;
+    }
+
+    .column1 h2 {
+        color: #2c3e50; /* Dark Blue */
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .column1 ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .column1 li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .column1 li::before {
+        content: "\2022"; /* Bullet point */
+        color: #ecf0f1; /* Light Gray */
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .column2 {
+        flex: 2;
+        padding: 20px;
+        background-color: #ffffff; /* White */
+        color: #000000; /* Black */
+        height: 615px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .widget-container {
+        border: 2px solid #1e1e1e;
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+    }
+
+    .info-section {
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .footer {
+        padding: 20px;
+        color: #ffffff; /* White */
+        text-align: center;
+        position: relative;
+        background-color: #3498db; /* Blue */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .footer-content {
+        max-width: 600px;
+        margin-top: 20px;
+        color: #ecf0f1; /* Light Gray */
+    }
+
+    .footer a {
+        color: #ffcc00; /* Gateway Yellow */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<script>
+    function changePage() {
+        const pages = [
+            "https://gabs62.github.io/Final/index.html",
+            "https://gabs62.github.io/Final/page2.html",
+            "https://gabs62.github.io/Final/page3.html",
+            "https://gabs62.github.io/Final/cybersecuritylab.html",
+            "https://gabs62.github.io/Final/page5.html"
+        ];
+
+        let currentPageIndex = 0;
+
+        setInterval(() => {
+            window.location.href = pages[currentPageIndex];
+            currentPageIndex = (currentPageIndex + 1) % pages.length;
+        }, 180000);
+    }
+</script>
 </head>
 
-<body>
-
+<body onload="changePage()">
     <div class="container">
         <div class="column1">
-            <h2>Cybersecurity Tips for College Students and Teachers</h2>
-            <div id="cybersecurityTips">
-                <h3>For Students:</h3>
-                <ul>
-                    <li>Use strong, unique passwords for your accounts. Avoid using the same password across multiple sites.</li>
-                    <li>Enable two-factor authentication (2FA) whenever possible to add an extra layer of security.</li>
-                    <li>Be cautious about sharing personal information on social media and other online platforms.</li>
-                    <li>Regularly update your devices and applications to patch security vulnerabilities.</li>
-                    <li>Backup your important data to prevent loss in case of a cyber incident.</li>
-                    <li>Stay informed about common phishing tactics and be skeptical of unsolicited emails or messages.</li>
-                </ul>
-
-                <h3>For Teachers:</h3>
-                <ul>
-                    <li>Ensure that your online teaching platforms have robust security measures in place.</li>
-                    <li>Train students on basic cybersecurity practices to promote a secure online learning environment.</li>
-                    <li>Use secure communication channels for sharing sensitive information with students and colleagues.</li>
-                    <li>Regularly update and patch the software used for teaching purposes.</li>
-                    <li>Encourage students to report any suspicious activities or security concerns promptly.</li>
-                    <li>Implement secure file-sharing solutions for sharing educational materials.</li>
-                </ul>
-            </div>
+            <h2>Cyber Tips</h2>
+            <ul>
+                <li>Stay updated on the latest cybersecurity threats</li>
+                <li>Use strong unique passwords for all your accounts</li>
+                <li>Regularly update your devices and software</li>
+                <li>Enable two-factor authentication for an extra layer of security</li>
+                <li>Secure your home Wi-Fi network with a strong password and encryption</li>
+                <li>Report any cybersecurity concerns</li>   
+            </ul>
         </div>
-
-        <!-- Your existing content -->
-
         <div class="column2">
-            <!-- ... -->
+            <h2>Interactive map showcasing cyber attacks worldwide</h2>
+            <iframe width="640" height="640" src="https://cybermap.kaspersky.com/widget" frameborder="0"></iframe>
         </div>
     </div>
-
-    <div class="footer">
+    <div class="footer"> 
         <footer>
-            <div class="row">
-                <h2>Add info</h2>
-                <p>context </p>
-                <p>more info</p>
+            <div class="footer-content">
+                <h2>Stay Connected with Gateway Community College</h2>
+                <p>Explore upcoming events and activities at Gateway Community College. Connect with us for exciting opportunities and collaborations!</p>
+                <a href="https://www.gatewaycc.edu/events" target="_blank">Explore Events</a>
             </div>
         </footer>
     </div>
-
-    <!-- ... -->
-
 </body>
-
 </html>

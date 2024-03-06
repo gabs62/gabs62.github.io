@@ -17,12 +17,40 @@
     .column1 {
         flex: 0.5;
         padding: 20px;
-        background-color: blue;
+        background-color: #0057b8;
         height: 615px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        color: aliceblue;
+        color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .column1 h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid  #2c3e50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .column1 ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .column1 li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .column1 li::before {
+        content: "\2022"; 
+        color: #ecf0f1;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
     }
 
     /*might remove border-radius and box-shadow*/
@@ -56,11 +84,10 @@
 
     .footer {
         padding: 20px;
-        color: azure;
+        color: white;
         text-align: center;
         position: relative;
-        background-color: blue;
-        color: white;
+        background-color: #003366;
 
     }
  
@@ -102,7 +129,7 @@
         </div>
         <div class="column2">
             <h2>Interactive map showcasing cyber attacks worldwide</h2>
-        <iframe width="640" height="640" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0">
+        <iframe width="640" height="640" src="https://cybermap.kaspersky.com/widget" frameborder="0">
         </div>
     </div>
         <div class="footer"> 

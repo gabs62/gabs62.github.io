@@ -89,7 +89,7 @@ position: relative;
     margin: 0 auto;
 }
 
-/* BOttom background style*/
+/* Bottom background style*/
 .footer::before {
 content: "";
 background: url(img/circuit-board2.jpg) center/cover no-repeat;

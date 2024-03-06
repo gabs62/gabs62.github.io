@@ -3,111 +3,17 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <style>
-        body{
-        margin: 0;
-        font-family: Arial, sans-serif;
-        }
-        p {
-    margin-bottom: 10px;
-    }
-    .container {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    .column1 {
-    flex: 0.5;
-    padding: 20px;
-    background-color:#050505 ;
-    height: 605px;
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline; 
-    }
-    .column2 {
-    flex: 2;
-    padding: 20px;
-    background-color: #fa7c06;
-    color: #333333;
-    height: 605px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    
-    }
-    .image-row {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    }
-    .image-row img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid #fa7c06;
-    border-radius: 10px;
-    }
-    .info-section {
-    margin-top: 10px;
-    text-align: justify;
-    }
-    .info-section h2{
-        margin-bottom: 10px;
-    }
-
-    .bullet-points li {
-    margin-bottom: 8px;
-    }
-    .qr-code {
-    position: absolute;
-    bottom: 30px;
-    right: 10px; 
-    width: 130px;
-    height: 130px;
-    }
-    .footer {
-    padding: 20px;
-    color: #fa7c06;
-    text-align: center;  
-    position: relative; 
-    }
-    .footer-content-box {
-        background-color: #0f0f0f;
-        border-radius: 10px;
-        padding: 15px;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-   .footer::before {
-    content: "";
-    background: url(img/circuit-board2.jpg) center/cover no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-   }
-    .row {
-    margin-bottom: 8px;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    </style>
+    <link rel="stylesheet" href="cybersecuritylab.css">
     </head>
 
 <body>
     
 <div class="container">
-    <div class="column1">
+
+<div class="column1">
         <h2><img src="img/ACSL_Logos-Orange.png" alt="Cyber Systems Lab Logo"></h2>
-    </div>
-    <div class="column2">
+</div>
+<div class="column2">
         <h2>Welcome to the Advanced Cyber  Systems Lab at Gateway Community College</h2>
         <div class="image-row">
         <img src="img/LogoWallSM.jpg" alt="Cyber Lab Logo Wall">

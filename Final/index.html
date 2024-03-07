@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +9,43 @@
     <script src="script.js"></script>
 
 </head>
+
 <body onload="changePage()">
-    
+
     <div class="container">
         <div class="column1">
             <h2>Cyber Tips</h2>
-        <ul>
-        <li> Stay updated on the latest cybersecurity threats</li>
-        <li>Enable two-factor authentication for an extra layer of security</li>
-        <li>Use strong unique passwords for all your accounts</li>
-        <li>Secure your home Wi-Fi network with a strong password and encryption</li>
-        <li>Install Antivirus Software</li>
-        <li>Backup Important Data</li>
-        <li>Regularly update your devices and Software</li>
-        <li>Beware of Phishing Emails</li>
-        <li>Report any cybersecurity concerns</li> 
-        <li>Be Wary of USB Drives</li> 
-        <li>Use a Virtual Private Network (VPN)</li>
-        </ul>
+            <ul>
+                <li> Stay updated on the latest cybersecurity threats</li>
+                <li>Enable two-factor authentication for an extra layer of security</li>
+                <li>Use strong unique passwords for all your accounts</li>
+                <li>Secure your home Wi-Fi network with a strong password and encryption</li>
+                <li>Install Antivirus Software</li>
+                <li>Backup Important Data</li>
+                <li>Regularly update your devices and Software</li>
+                <li>Beware of Phishing Emails</li>
+                <li>Report any cybersecurity concerns</li>
+                <li>Be Wary of USB Drives</li>
+                <li>Use a Virtual Private Network (VPN)</li>
+            </ul>
         </div>
         <div class="column2">
             <h2>Interactive map showcasing cyber attacks worldwide</h2>
             <iframe width="770" height="600" src="https://cybermap.kaspersky.com/" frameborder="0"></iframe>
         </div>
     </div>
-        <div class="footer"> 
+    <div class="footer">
         <footer>
-        <div class="footer-content">
-        <h2>Scan our QR code to stay updated with current Campus events</h2>
-        <img src="img/gccqr-code.png" alt="QR Code" class="qr-code"> 
-        </div>
-    </footer>
+            <div class="footer-content">
+                <h2>Scan our QR code to stay updated with current Campus events</h2>
+                <img src="img/gccqr-code.png" alt="QR Code" class="qr-code">
+            </div>
+        </footer>
     </div>
     <script>
         var pageList = ["careers.html"] // Updated pages order
         var currentIndex = 0;
-    
+
         function transitionPage() {
             currentIndex++;
             if (currentIndex >= pageList.length) {
@@ -51,8 +53,9 @@
             }
             window.location.href = pageList[currentIndex];
         }
-        
+
         setInterval(transitionPage, 3500); // 
     </script>
-    </body>
-    </html>
+</body>
+
+</html>

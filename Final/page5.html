@@ -54,5 +54,19 @@
                 <p>Health Technologist 14%</p>
             </div>
     </div>
+    <script>
+        var pageList = ["index.html"] // Updated pages order
+        var currentIndex = 0;
+    
+        function transitionPage() {
+            currentIndex++;
+            if (currentIndex >= pageList.length) {
+                currentIndex = 0;
+            }
+            window.location.href = pageList[currentIndex];
+        }
+        
+        setInterval(transitionPage, 5000); // 5 seconds
+    </script>
 </body>
 </html>

@@ -56,6 +56,21 @@
 
         setInterval(transitionPage, 10000); // 
     </script>
+    <script>
+
+        var elem = document.getElementById("myvideo");
+        
+        
+        function openFullscreen() {
+        if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+        }
+        }
+        </script>
 </body>
 
 </html>

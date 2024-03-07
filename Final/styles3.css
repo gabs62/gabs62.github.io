@@ -60,13 +60,23 @@
   }
   
   /* Style the footer */
-  footer 
-  {
+  footer{
     background-color: #0c2269;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
+    padding: 10px;
+    font-size: 10px;
     color: white;
+  }
+
+  .row{
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    padding-left: 140px;
+
+  }
+  .p2 {
+    position: absolute;
+    left: 0px;
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */

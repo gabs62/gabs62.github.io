@@ -2,19 +2,23 @@
     display: flex;
     }
     
-    .column1{
+    .nat1{
     height: 500px;
     width: 40%;
-    background-color:whitesmoke;
+    background-color:rgba(245, 245, 245, 0.602);
     }
     
-    .column2{
+    .nat2{
     width: 60%;
     background-color:white;
     }
     
     .footer {
-    text-align: center;
     background-color: #0032a1;
-    padding: 120px;
+    color: white;
+    padding: 20px;
+    }
+    
+    .row{
+    display: inline-block
     }

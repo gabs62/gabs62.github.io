@@ -28,9 +28,9 @@
     position: absolute;
     left: 35px;
     left: 8px; 
-    bottom: 158px;
-    width: 265px;
-    height: 265px;
+    bottom: 90px;
+    width: 240px;
+    height: 240px;
 }
   
   article 
@@ -40,6 +40,16 @@
     width: 80%;
     background-color: #5596cf;
     height: 500px; /* only for demonstration, should be removed */
+  }
+  article h1
+  {
+    color: #0c2269;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
   }
   
   /* Clear floats after the columns */

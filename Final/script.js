@@ -14,3 +14,5 @@ function changePage() {
         currentPageIndex = (currentPageIndex + 1) % pages.length;
     }, 180000);
 }
+
+var pagelist

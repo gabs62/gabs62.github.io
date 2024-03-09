@@ -1,65 +1,95 @@
-* {
-  box-sizing: border-box;
+* 
+ {
+    box-sizing: border-box;
+ }
+  
+ body 
+  {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* Create two columns/boxes that floats next to each other */
+  nav 
+  {
+    float: left;
+    width: 20%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #9cb9ea;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul 
+  {
+    list-style-type: none;
+    padding: 0;
+  }
+  .QR-code
+  {
+    position: absolute;
+    left: 35px;
+    left: 8px; 
+    bottom: 90px;
+    width: 240px;
+    height: 240px;
 }
+  
+  article 
+  {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #5596cf;
+    height: 500px; /* only for demonstration, should be removed */
+  }
+  article h1
+  {
+    color: #0c2269;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+  article img {
+    max-width: 100%; /* Make the image responsive, but constrain it to its container width */
+    height: auto; /* Ensure the image retains its aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+}
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer{
+    background-color: #0c2269;
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+  }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0; /* Remove default body margin */
-}
+  .row{
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    padding-left: 140px;
 
-/* Create two columns/boxes that float next to each other */
-nav {
-  float: left;
-  width: 20%;
-  background: #9cb9ea;
-  padding: 20px;
-  height: 100vh; /* Set height to 100% of the viewport height */
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.QR-code {
-  width: 100%; /* Adjusted width for responsiveness */
-  height: auto; /* Allow the height to adjust automatically */
-  max-width: 240px; /* Added max-width for responsiveness */
-  display: block; /* Ensures it behaves as a block element */
-  margin: 20px 0; /* Added margin for spacing */
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 80%;
-  background-color: #5596cf;
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
-}
-
-article h1 {
-  color: #0c2269;
-  font-size: 1.5em;
-  margin-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1.4em;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #0c2269;
-  padding: 10px;
-  font-size: 14px; /* Adjusted font size for better readability */
-  color: white;
-  clear: both; /* Clear floats to ensure proper rendering */
-}
+  }
+  .p2 {
+    position: absolute;
+    left: 0px;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+ 

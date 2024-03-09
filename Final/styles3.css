@@ -12,7 +12,7 @@
   {
     float: left;
     width: 20%;
-    height: 500px; /* only for demonstration, should be removed */
+    height: 100%;
     background: #9cb9ea;
     padding: 20px;
   }
@@ -25,12 +25,12 @@
   }
   .QR-code
   {
-    position: absolute;
-    left: 35px;
-    left: 8px; 
+
     bottom: 90px;
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    height: auto;
+    display: block
+    margin 20px;
 }
   
   article 
@@ -39,7 +39,7 @@
     padding: 20px;
     width: 80%;
     background-color: #5596cf;
-    height: 500px; /* only for demonstration, should be removed */
+    height: 100%; 
   }
   article h1
   {

@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Remove default body margin */
 }
 
 /* Create two columns/boxes that float next to each other */
@@ -12,7 +13,7 @@ nav {
   width: 20%;
   background: #9cb9ea;
   padding: 20px;
-  height: 100%; /* Set height to 100% to cover the whole height of the container */
+  height: 100vh; /* Set height to 100% of the viewport height */
 }
 
 /* Style the list inside the menu */
@@ -34,7 +35,7 @@ article {
   padding: 20px;
   width: 80%;
   background-color: #5596cf;
-  height: 100%; /* Set height to 100% to cover the whole height of the container */
+  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
 }
 
 article h1 {
@@ -61,16 +62,4 @@ footer {
   font-size: 14px; /* Adjusted font size for better readability */
   color: white;
   clear: both; /* Clear floats to ensure proper rendering */
-}
-
-.row {
-  padding-left: 140px;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-      width: 100%;
-      height: auto;
-  }
 }

@@ -10,7 +10,7 @@
 
 </head>
 
-<body onload="changePage()">
+<body onload="changePage(); openFullscreen ();">
 
     <div class="container">
         <div class="column1">
@@ -43,6 +43,19 @@
         </footer>
     </div>
     <script>
+        var elem = document.querySelector(".container");
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+    <script>
         var pageList = ["careers.html"] // Updated pages order
         var currentIndex = 0;
 
@@ -54,25 +67,8 @@
             window.location.href = pageList[currentIndex];
         }
 
-        setInterval(transitionPage, 10000); // 
+        setInterval(transitionPage, 15000); // 
     </script>
-    
-    <script>
-
-        var elem = document.getElementById("myvideo");
-        
-        
-        function openFullscreen() {
-        if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-        }
-        }
-   
-</script>
 </body>
 
 </html>
